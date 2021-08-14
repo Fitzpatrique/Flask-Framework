@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+{% block html %}
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename = 'style/index.css')}}"/>
+  <link rel="icon" type="image/jpg" href="{{ url_for('static', filename = 'images/logo3.png')}}"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+  <!--link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}"-->
+  <title> Food App </title>
+  <meta name = "description" content = "Excellent food service">
+  <meta name="keywords" content="Food, Food App, Good Food, food service, food delivery service, Best Food, Fast Food, Meal Delivery, On the go, Home Delivery, Affordable Food Service, Reliable Food service, Best Food">
+  
+  
+  {% block head %}{% endblock %}
+</head>
+<body>
+    {% block body %}{% endblock %}
+
+    <script rel="javascript" type= "text/javascript" src="{{ url_for('static', filename = 'js/index.js')}}"></script>
+</body>
+{% endblock%}
